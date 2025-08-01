@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+}
+
+
+.login-page-wrapper {
+  /* Set the background image */
+  
+  /* Full screen layout */
+  height: 100vh;
+  width: 100vw;
+
+  /* Flexbox for centering content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header and Logo Styling */
+.login-header {
+  margin-bottom: 2rem; /* Space between logo and login card */
+}
+
+.login-header img {
+  max-width:600px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* The White Login Card */
+.login-card {
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  max-width: 780px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  text-align: center;
+  height: 30em;
+}
+
+/* The "LOGIN" Title */
+.login-card h1 {
+  margin: 0 0 2rem 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Container for each input field + icon */
+.input-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Input Icons */
+.input-group i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* Username and Password Input Fields */
+.input-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0 0.5rem 2rem; /* Top/Bottom, Left padding for icon */
+  font-size: 1rem;
+  outline: none; /* Removes the blue outline on focus */
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-bottom-color: #c00000; /* Red color on focus */
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: #c00000; /* The red color from your image */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #a00000; /* A slightly darker red for hover */
+}
